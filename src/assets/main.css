@@ -1,0 +1,29 @@
+/* Reset CSS：移除瀏覽器預設的 margin/padding，統一 box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 設定 html, body 佔滿整個畫面，字體與背景為白底黑字 */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* 避免按鈕或輸入框被預設樣式影響太大 */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
